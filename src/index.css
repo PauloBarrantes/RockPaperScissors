@@ -3,3 +3,37 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.game .scissors {
+  justify-self: center;
+  grid-area: 1 / 1 / 2 / 7;
+}
+
+.game .spock {
+  transform: translateY(-20px);
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.game .paper {
+  transform: translateY(-20px);
+  grid-area: 2 / 5 / 3 / 7;
+}
+
+.game .lizard {
+  transform: translateX(-15px);
+  grid-area: 3 / 2 / 4 / 4;
+}
+
+.game .rock {
+  transform: translateX(15px);
+  grid-area: 3 / 4 / 4 / 6;
+}
