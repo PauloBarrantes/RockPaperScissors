@@ -1,5 +1,4 @@
 import RockPaperScissors from "./RockPaperScissors";
-import { create } from "zustand";
 import Modal from "./components/shared/Modal";
 
 function App() {

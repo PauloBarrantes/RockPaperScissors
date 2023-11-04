@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import useStore from "../store";
 import { elements } from "../constants/elements";
-import Node from "./shared/Node";
 import { cn, getRandomElement } from "../utils";
 import Results from "./Results";
 
@@ -55,7 +54,7 @@ const ResolutionPhase = () => {
 
   return (
     <div>
-      <Results result={result} />
+      <Results />
 
       <div
         className={cn(

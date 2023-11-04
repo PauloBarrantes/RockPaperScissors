@@ -2,7 +2,7 @@ import useStore from "../store";
 import Node from "./shared/Node";
 import { cn } from "../utils";
 
-const Results = ({ result }: { result: string }) => {
+const Results = () => {
   const currentElement = useStore((state) => state.selectedElement);
   const houseElement = useStore((state) => state.selectedElementByHouse);
 
